@@ -30,45 +30,7 @@
 
     html { scroll-behavior: smooth; }
 
-    body<div id="password-gate">
-  <div class="gate-box">
-    <h2>Enter Passcode</h2>
-    <input type="password" id="passInput" placeholder="••••••" />
-    <button onclick="checkPassword()">Enter</button>
-    <p id="error" style="color:red; display:none;">Wrong passcode</p>
-  </div>
-</div>
-
-<style>
-#password-gate {
-  position: fixed;
-  inset: 0;
-  background: #FAF6EE;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-.gate-box {
-  text-align: center;
-  font-family: 'DM Sans', sans-serif;
-}
-.gate-box input {
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-.gate-box button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #C8604A;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-</style> {
+    body {
       background: var(--cream);
       color: var(--ink);
       font-family: var(--font-body);
@@ -1031,17 +993,5 @@
 
     renderMap('us');
   </script>
-  <script>
-const correctPassword = "evanandsarah"; // ← change this
-
-function checkPassword() {
-  const input = document.getElementById("passInput").value;
-  if (input === correctPassword) {
-    document.getElementById("password-gate").style.display = "none";
-  } else {
-    document.getElementById("error").style.display = "block";
-  }
-}
-</script>
 </body>
 </html>
